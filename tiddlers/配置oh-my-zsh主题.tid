@@ -1,0 +1,15 @@
+created: 20230324131837030
+creator: gocacc
+modified: 20230324133439173
+modifier: gocacc
+tags: oh-my-zsh
+title: 配置oh-my-zsh主题
+type: text/vnd.tiddlywiki
+
+[[在这里查看的主题样式|https://github.com/ohmyzsh/ohmyzsh/wiki/Themes]]  
+
+打开`~/.zshrc`文件，并找`ZSH_THEME="XXX"`开头的那一行，修改为`ZSH_THEME="主题名称"`
+
+使用[[source|source]] ~/.zshrc刷新[[ohmyzsh|oh-my-zsh]]配置文件
+
+P.S. 这些主题都保存在`~/.oh-my-zsh/themes`目录中

@@ -1,0 +1,65 @@
+created: 20230324134224610
+creator: gocacc
+modified: 20230324142702238
+modifier: gocacc
+tags: Ubuntu linux 时间
+title: 时间不正确
+type: text/vnd.tiddlywiki
+
+''参考链接：''
+
+# [[ubuntu显示时间不正确的问题解决|https://blog.csdn.net/luobeihai/article/details/124014963]]
+# [[如何在 Ubuntu 20.04 上设置或者修改时区|https://developer.aliyun.com/article/759132]]
+
+
+显示时间不正确的情况就两种情况
+
+* 第一：系统设置的时区不对
+* 第二：时区是正确的，但是系统本身的时间不对
+
+!! 1. 时区是正确的，系统本身时间不对
+
+我们如何确定自己的时区是正确的？输入如下命令可以查看：
+
+```bash
+date -R
+```
+
+该命令会把我们系统的时间还有时区显示出来，我们是属于东八区，如下：
+
+```bash
+$ date -R
+Fri, 24 Mar 2023 22:15:31 +0800
+```
+
+如果不是 +0800 这个时区的话，就说明我们的时区不对。如果时区正确，系统时间还是有问题，那么我们需要同步网络时间。
+
+# 安装[[ntpdate]]工具：
+
+```bash
+sudo apt-get install ntpdate
+```
+
+# 同步系统时间与网络时间
+
+```bash
+sudo ntpdate cn.pool.ntp.org
+```
+
+!! 2. 时区不正确的情况
+
+使用[[timedatectl]]命令查看Asia的时区
+
+```bash
+timedatectl list-timezones | grep -i Asia
+
+Asia/Aden
+Asia/Almaty
+... 后面还有
+```
+
+设置时区为Asia/Chongqing
+
+```bash
+sudo timedatectl set-timezone Asia/Chongqing
+```
