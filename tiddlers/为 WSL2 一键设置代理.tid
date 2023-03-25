@@ -1,9 +1,11 @@
 created: 20230325033101490
 creator: gocacc
-modified: 20230325033218699
+modified: 20230325034635158
 modifier: gocacc
 tags: wsl2 proxy
 title: 为 WSL2 一键设置代理
 type: text/vnd.tiddlywiki
+
+[[WSL2配置代理|https://www.cnblogs.com/tuilk/p/16287472.html]]
 
 [[为 WSL2 一键设置代理|https://zhuanlan.zhihu.com/p/153124468]]

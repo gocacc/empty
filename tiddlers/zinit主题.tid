@@ -1,6 +1,6 @@
 created: 20230325024751718
 creator: gocacc
-modified: 20230325031827863
+modified: 20230325042546970
 modifier: gocacc
 tags: zinit
 title: zinit主题
@@ -16,7 +16,9 @@ type: text/vnd.tiddlywiki
 
 如果想重新配置，执行：`p10k configure`
 
-!! 3. [[linux]]中安装`nerd font`字体
+!! 3. [[linux]]中安装`Hack Nerd Font`字体
+
+[[Nerd Font|https://github.com/ryanoasis/nerd-fonts]]
 
 ```
 cd ~
@@ -25,9 +27,9 @@ cd nerd-fonts
 ./install.sh
 ```
 
-!! 4. 如果是使用的`windows`终端，那么将终端的字体修改为`nerd font`
-[[官网 nerd font|https://www.nerdfonts.com/font-downloads]]
+!! 4. 如果是使用的`windows`终端，将终端的字体修改为`Hack Nerd Font`
 
-找到 `Hack Nerd Font` 下载
-
+```
+git clone https://github.com/gocacc/Hack-Nerd-Font.git
+```
 
