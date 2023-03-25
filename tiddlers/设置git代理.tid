@@ -1,0 +1,33 @@
+created: 20230325032204882
+creator: gocacc
+modified: 20230325032656365
+modifier: gocacc
+tags: Git proxy
+title: 设置git代理
+type: text/vnd.tiddlywiki
+
+! 1. 设置全局http代理和https代理
+
+```
+git config --global http.proxy 127.0.0.1:7890
+git config --global https.proxy 127.0.0.1:7890
+```
+
+! 2. 取消这两个全局代理
+
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+!.  3. 查看 Git 的配置
+
+```
+git config --list
+```
+
+! 4. 编辑 Git 的配置文件
+
+```
+git config --global --edit
+```

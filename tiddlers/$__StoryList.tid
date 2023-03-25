@@ -1,7 +1,7 @@
-created: 20230325011145848
+created: 20230325030539759
 creator: gocacc
-list: zsh oh-my-zsh zinit 安装zinit
-modified: 20230325013204027
+list: [[为 WSL2 一键设置代理]] 目录 Git 设置git代理 proxy 将Git与Github进行SSH连接 zinit zsh zinit主题
+modified: 20230325033048570
 modifier: gocacc
 title: $:/StoryList
 type: text/vnd.tiddlywiki

@@ -1,14 +1,12 @@
 created: 20230325015539709
 creator: gocacc
-modified: 20230325023715813
+modified: 20230325024257866
 modifier: gocacc
 tags: linux zsh
 title: zinit
 type: text/vnd.tiddlywiki
 
 https://github.com/zdharma-continuum/zinit
-
-[[ZSH 插件管理器 zinit 介绍及使用|https://www.mivm.cn/zsh-zinit]]
 
 [[zsh 插件管理器 - Zinit|https://www.jianshu.com/p/2e098dfecf4a]]
 
