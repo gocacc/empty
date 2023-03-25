@@ -1,0 +1,15 @@
+created: 20230325013209935
+creator: gocacc
+modified: 20230325013310594
+modifier: gocacc
+tags: oh-my-zsh
+title: 卸载oh-my-zsh
+type: text/vnd.tiddlywiki
+
+进入到`~/.oh-my-zsh/tools`目录
+
+```
+cd ~/.oh-my-zsh/tools
+chmod +x uninstall.sh
+./uninstall.sh
+```

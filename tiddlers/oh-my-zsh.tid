@@ -1,0 +1,13 @@
+created: 20230325012101207
+creator: gocacc
+modified: 20230325012322723
+modifier: gocacc
+tags: linux zsh
+title: oh-my-zsh
+type: text/vnd.tiddlywiki
+
+[[官网 oh-my-zsh|https://ohmyz.sh/]]
+
+[[github.com/ohmyzsh|https://github.com/ohmyzsh/ohmyzsh]]
+
+''oh-my-zsh''的配置文件在`~/.zshrc`
