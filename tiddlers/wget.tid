@@ -1,0 +1,19 @@
+created: 20230326020152790
+creator: gocacc
+modified: 20230326020655326
+modifier: gocacc
+tags: Ubuntu linux
+title: wget
+type: text/vnd.tiddlywiki
+
+wget 下载到指定目录，如`$HOME/downloads`
+
+```
+wget -P $HOME/downloads https://golang.google.cn/dl/go1.18.10.linux-amd64.tar.gz
+```
+
+wget 下载到指定目录并重命名，如`$HOME/downloads/go1.18.10.tar.gz`
+
+```
+wget -O $HOME/downloads/go1.18.10.tar.gz https://golang.google.cn/dl/go1.18.10.linux-amd64.tar.gz
+```

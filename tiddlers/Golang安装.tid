@@ -1,0 +1,42 @@
+created: 20230326014041577
+creator: gocacc
+modified: 20230326020342479
+modifier: gocacc
+tags: Golang Ubuntu windows
+title: Golang安装
+type: text/vnd.tiddlywiki
+
+! 下载Golang
+
+在[[golang下载官网|https://golang.google.cn/dl/]]中找到需要的版本
+
+通过[[wget]]命令下载到家目录
+
+```
+wget -P $HOME/downloads https://golang.google.cn/dl/go1.18.10.linux-amd64.tar.gz
+```
+
+! 安装Golang
+
+1. 把go解压到`/usr/local`下
+
+```
+tar -C /usr/local -xzf 下载的包名
+```
+
+2. 将 `/usr/local/go/bin` 添加到环境变量中
+
+将以下行添加到 `$HOME/.profile` 或 `/etc/profile`（用于系统范围的安装）
+
+```bash
+# path环境
+export PATH=$PATH:/usr/local/go/bin
+# go代理
+export GOPROXY=https://proxy.golang.com.cn,direct
+# 启用包管理
+export GO111MODULE=on
+```
+
+然后执行 `source $HOME/.profile 或 source /etc/profile` 来刷新环境配置
+
+3. 通过 `go version` 查看go是否安装成功
