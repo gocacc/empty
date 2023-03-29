@@ -1,1 +1,0 @@
-[修复 Ubuntu 中的 “Key is stored in legacy trusted.gpg keyring” 问题 | Linux 中国](https://zhuanlan.zhihu.com/p/608493042)
